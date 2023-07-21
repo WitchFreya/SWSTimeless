@@ -19,6 +19,7 @@ class GLASSES(Shemagh) {
   ITEM_META(2);
   GLASSES_NAME(Pink);
   model = QPATHTOF(data\shemagh\shemagh);
+  identityTypes[] = {};
   class XtdGearInfo {
     model = QGLASSES(Shemagh);
     color = "Pink";
