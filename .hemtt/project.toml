@@ -1,0 +1,14 @@
+name = "SWS Timeless"
+author = "Maid"
+prefix = "swst"
+mainprefix = "x"
+
+[hemtt.launch.default]
+workshop = [
+    "463939057", # ace
+    "450814997", # cba_a3
+    "2369477168", # advanced developer tools
+]
+
+[files]
+exclude = ["*.inc"]
