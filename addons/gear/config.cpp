@@ -11,7 +11,7 @@ class CfgPatches
         units[] = { };
         weapons[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"SWST_Main"};
+        requiredAddons[] = {"A3_Characters_F"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
