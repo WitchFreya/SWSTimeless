@@ -7,6 +7,9 @@ mainprefix = "x"
 workshop = [
     "463939057", # ace
     "450814997", # cba_a3
+
+    # optionals
+    "2522638637", # ace arsenal extended
     "2369477168", # advanced developer tools
 ]
 
