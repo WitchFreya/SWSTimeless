@@ -15,7 +15,7 @@
         };                                                                              \
     }
 
-class GLASSES(Shemagh) {
+class GLASSES(Shemagh): G_Bandanna_oli {
   ITEM_META(2);
   GLASSES_NAME(Pink);
   model = QPATHTOF(data\shemagh\shemagh);
