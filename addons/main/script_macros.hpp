@@ -10,18 +10,18 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
-#define SCOPE(varScope)      \
-    scope = varScope;        \
-    scopeCurator = varScope; \
-    scopeArsenal = varScope
+#define SCOPE(var0)      \
+    scope = var0;        \
+    scopeCurator = var0; \
+    scopeArsenal = var0
 
 #define META                \
     dlc = QUOTE(PREFIX);    \
     author = QUOTE(AUTHOR)
 
-#define ITEM_META(varScope) \
+#define ITEM_META(var0) \
     META;                   \
-    SCOPE(varScope)
+    SCOPE(var0)
 
 #define NAME(var0) [PREFIX] var0
 #define QNAME(var0) QUOTE(NAME(var0))
