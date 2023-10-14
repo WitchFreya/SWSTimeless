@@ -6,13 +6,14 @@ class XtdGearModels {
             options[] = {"Color","Variant"};
             class Color {
                 label = "Color";
-                values[] = {"Pink","Blue","Green","Orange","Purple"};
+                values[] = {"Pink","Blue","Green","Orange","Purple", "Gold"};
                 #define C_VALUE(var0,var1) class var0 { label = QUOTE(var0); description = QUOTE(A var1 shemagh.); }
                 C_VALUE(Pink,pink);
                 C_VALUE(Blue,blue);
                 C_VALUE(Green,green);
                 C_VALUE(Orange,orange);
                 C_VALUE(Purple,purple);
+                C_VALUE(Gold,gold);
                 #undef C_VALUE
             };
 
