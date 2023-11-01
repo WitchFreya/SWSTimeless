@@ -23,5 +23,5 @@
     META;                   \
     SCOPE(var0)
 
-#define NAME(var0) [PREFIX] var0
+#define NAME(var0) [SWST] var0
 #define QNAME(var0) QUOTE(NAME(var0))
