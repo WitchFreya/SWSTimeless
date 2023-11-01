@@ -1,18 +1,17 @@
 #include "script_component.hpp"
 
-#include "defines.hpp"
-#include "CfgEventHandlers.inc"
-#include "ace_arsenal_display.inc"
+#include "XtdGearModels.inc"
 
 class CfgPatches
 {
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = { };
-        weapons[] = {};
+        units[] = {  };
+        weapons[] = {  };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main", "ace_arsenal"};
+        requiredAddons[] = {"aceax_main"};
+        skipWhenMissingDependencies = 1;
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

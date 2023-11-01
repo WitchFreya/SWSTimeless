@@ -59,6 +59,6 @@ private _fnc_migrate = {
 	_itemTree apply { [_x,_itemMap] call _fnc_migrate };
 };
 
-private _migrated = [_base, GVARMAIN(migrations)] call _fnc_migrate;
+private _migrated = [_base, uiNamespace getVariable [QGVARMAIN(migrations), createHashMap]] call _fnc_migrate;
 if !(_hasMigrations) exitWith {0};
 if (isNil "_cbaExtended") then {_migrated} else {[_migrated,_cbaExtended]};

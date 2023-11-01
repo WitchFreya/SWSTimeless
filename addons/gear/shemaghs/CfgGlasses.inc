@@ -1,49 +1,31 @@
 class CfgGlasses {
-  class G_Bandanna_oli; // Not a typo, bandanna is how Arma spells it.
-  #define GLASSES_NAME(var0) displayName = QNAME(Shemagh (var0))
+    class G_Bandanna_oli; // Not a typo, bandanna is how Arma spells it.
 
-    #define C_SHEMAGH_VARIANT(var0)                                                         \
-        class GLASSES(DOUBLES(Shemagh,var0)): GLASSES(Shemagh) {                            \
-            GLASSES_NAME(var0);                                                             \
-            hiddenSelections[] = {"camo2"};                                                 \
-            hiddenSelectionsTextures[] = {QPATHTOF(data\shemagh\shemagh_##var0##_co.paa)};  \
-            class XtdGearInfo : XtdGearInfo { color = QUOTE(var0); };                       \
-        };                                                                                  \
-        class GLASSES(TRIPLES(Shemagh,var0,Up)): GLASSES(DOUBLES(Shemagh,var0)) {           \
-            GLASSES_NAME(var0/Up);                                                          \
-            model = QPATHTOF(data\shemagh\shemagh_up);                                      \
-            class XtdGearInfo : XtdGearInfo {                                               \
-                variant = "Up";                                                             \
-            };                                                                              \
-        }
-
-    class GLASSES(Shemagh): G_Bandanna_oli {
-        ITEM_META(2);
-        GLASSES_NAME(Pink);
-        model = QPATHTOF(data\shemagh\shemagh);
+    class SWST_Shemagh_Base : G_Bandanna_oli
+    {
+        ITEM_META(0);
+        displayName = QNAME(Shemagh (Base));
+        hiddenSelections[] = {"camo2"};
+        model = QPATHTOF(data\shemagh\shemagh.p3d);
         identityTypes[] = {};
-        class XtdGearInfo {
-            model = QGLASSES(Shemagh);
-            color = "Pink";
-            variant = "Down";
-        };
     };
 
-    class GLASSES(Shemagh_Up): GLASSES(Shemagh) {
-        model = QPATHTOF(data\shemagh\shemagh_up);
-        GLASSES_NAME(Pink/Up);
-        class XtdGearInfo : XtdGearInfo {
-            variant = "Up";
-        };
-    };
-
-    C_SHEMAGH_VARIANT(Blue);
-    C_SHEMAGH_VARIANT(Green);
-    C_SHEMAGH_VARIANT(Orange);
-    C_SHEMAGH_VARIANT(Purple);
-    C_SHEMAGH_VARIANT(Gold);
-
-    #undef GLASSES_NAME
-    #undef C_SHEMAGH_VARIANT
-
+    #define COLOR Pink
+    #include "_Shemagh.inc"
+    #undef COLOR
+    #define COLOR Blue
+    #include "_Shemagh.inc"
+    #undef COLOR
+    #define COLOR Green
+    #include "_Shemagh.inc"
+    #undef COLOR
+    #define COLOR Orange
+    #include "_Shemagh.inc"
+    #undef COLOR
+    #define COLOR Purple
+    #include "_Shemagh.inc"
+    #undef COLOR
+    #define COLOR Gold
+    #include "_Shemagh.inc"
+    #undef COLOR
 };
