@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-#include "CfgGlasses.inc"
 #include "XtdGearModels.inc"
 
 class CfgPatches
