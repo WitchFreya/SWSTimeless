@@ -1,0 +1,8 @@
+swst_uavTerminalSlotted:
+    args:
+        - _unit:
+            type: OBJECT
+            description: Unit who slotted the terminal.
+        - _item:
+            type: STRING
+            description: UAV terminal that was slotted.

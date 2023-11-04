@@ -25,3 +25,9 @@
 
 #define NAME(var0) [SWST] var0
 #define QNAME(var0) QUOTE(NAME(var0))
+
+#define EXIT_OK 0
+#define EXIT_ERROR_CODE(varError,varCode) \
+    ERROR_2(format ["Exiting: Error code %1", varCode],varError); \
+    varCode
+#define EXIT_ERROR(varError) EXIT_ERROR_CODE(varError,-1);
