@@ -16,7 +16,7 @@ class ace_arsenal_loadoutsDisplay
             {
                 class contentPanel : RscListnBox
                 {
-                    onLBSelChanged = QUOTE([ARR_3(ctrlParent (_this select 0), _this select 0, _this select 1)] call FUNC(onSelChangedLoadouts));
+                    onLBSelChanged = QUOTE([ARR_3(ctrlParent(_this select 0),_this select 0,_this select 1)] call FUNC(onSelChangedLoadouts));
                 };
 
                 class buttonSave : ctrlButton
@@ -45,7 +45,7 @@ class ace_arsenal_loadoutsDisplay
                     x = BTN_X(4);
                     text = "Migrate";
                     tooltip = "Attempt to migrate invalid loadout to the new version.";
-                    onButtonClick = QUOTE([ARR_2(ctrlParent (_this select 0), _this select 0)] call FUNC(onClickMigrate));
+                    onButtonClick = QUOTE([ARR_2(ctrlParent(_this select 0),_this select 0)] call FUNC(onClickMigrate));
                 };
 
                 class buttonDelete : buttonSave
