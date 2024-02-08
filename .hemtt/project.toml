@@ -22,8 +22,5 @@ workshop = [
     "2369477168", # advanced developer tools
 ]
 
-[hemtt.release]
-archive = false
-
 [files]
 exclude = ["*.inc"]
