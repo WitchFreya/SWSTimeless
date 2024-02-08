@@ -36,7 +36,7 @@ if (isDedicated) exitWith {
     params ["_unit", "_item"];
     private _unblockedUAVs = missionNamespace getVariable QGVAR(unblockedUAVs);
     if (isNil "_unblockedUAVs") exitWith {
-        TRACE_1("No UAVs presently unblocked", _unit);
+        TRACE_1("No UAVs presently unblocked",_unit);
         EXIT_OK;
     };
 
@@ -49,7 +49,7 @@ if (isDedicated) exitWith {
     params ["_unit", "_item"];
     private _blockedUAVs = missionNamespace getVariable QGVAR(blockedUAVs);
     if (isNil "_blockedUAVs") exitWith {
-        TRACE_1("No UAVs presently blocked", _unit);
+        TRACE_1("No UAVs presently blocked",_unit);
         EXIT_OK;
     };
 
