@@ -31,3 +31,6 @@
     ERROR_2(format ["Exiting: Error code %1", varCode],varError); \
     varCode
 #define EXIT_ERROR(varError) EXIT_ERROR_CODE(varError,-1);
+
+#define TRUE 1
+#define FALSE 0
