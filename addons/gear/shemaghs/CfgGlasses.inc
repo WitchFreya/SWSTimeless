@@ -28,4 +28,7 @@ class CfgGlasses {
     #define COLOR Gold
     #include "_Shemagh.inc"
     #undef COLOR
+    #define COLOR Red
+    #include "_Shemagh.inc"
+    #undef COLOR
 };
